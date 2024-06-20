@@ -1,0 +1,143 @@
+.contactUs {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.03em;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: inherit;
+}
+.contactUsWrapper {
+  width: 970px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.inputFields,
+.inputFields1 {
+  border: 0;
+  background-color: transparent;
+  height: 35px;
+  width: 470px;
+  margin: 0 !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: var(--body-18px-regular);
+  font-size: var(--body-18px-regular-size);
+  color: var(--neutral-02);
+}
+.inputFields1 {
+  left: 500px;
+}
+.emailAddress {
+  position: relative;
+  text-transform: capitalize;
+  display: inline-block;
+  min-width: 112px;
+}
+.inputFieldsChild {
+  align-self: stretch;
+  height: 1px;
+  position: relative;
+  background-color: var(--color-silver);
+}
+.inputFields2 {
+  width: 970px;
+  margin: 0 !important;
+  position: absolute;
+  top: 99px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  max-width: 100%;
+}
+.message {
+  position: relative;
+  text-transform: capitalize;
+  display: inline-block;
+  min-width: 72px;
+}
+.inputFieldsItem {
+  align-self: stretch;
+  height: 1px;
+  position: relative;
+  background-color: var(--color-silver);
+}
+.form,
+.inputFields3 {
+  width: 970px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.inputFields3 {
+  margin: 0 !important;
+  position: absolute;
+  top: 198px;
+  left: 0;
+  flex-direction: column;
+  gap: var(--gap-98xl);
+}
+.form {
+  height: 338px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  gap: 64px 28px;
+  font-size: var(--body-18px-regular-size);
+  color: var(--neutral-02);
+}
+.btn {
+  height: 53px;
+  width: 205px;
+}
+.letsTalk,
+.submit {
+  display: flex;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.submit {
+  width: 970px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+}
+.letsTalk {
+  align-self: stretch;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-31xl) var(--padding-xl);
+  gap: var(--gap-36xl);
+  text-align: left;
+  font-size: var(--h4-70-size);
+  color: var(--color-black);
+  font-family: var(--body-18px-regular);
+}
+@media screen and (max-width: 800px) {
+  .contactUs {
+    font-size: var(--font-size-37xl);
+  }
+  .letsTalk {
+    gap: var(--gap-8xl);
+    padding-top: var(--padding-13xl);
+    padding-bottom: var(--padding-13xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .contactUs {
+    font-size: var(--font-size-23xl);
+  }
+}

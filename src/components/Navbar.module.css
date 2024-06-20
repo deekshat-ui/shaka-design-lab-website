@@ -1,0 +1,112 @@
+.navbarLogoIcon {
+  height: 63.5px;
+  width: 150px;
+  position: relative;
+}
+.navigationBackground {
+  height: 7.8px;
+  width: 32.6px;
+  position: absolute;
+  margin: 0 !important;
+  bottom: 1.3px;
+  left: 0;
+  background-color: var(--color-yellow);
+}
+.about,
+.home,
+.portfolio,
+.services {
+  text-decoration: none;
+  position: relative;
+  text-transform: capitalize;
+  color: inherit;
+  display: inline-block;
+}
+.home {
+  min-width: 48px;
+  z-index: 1;
+}
+.about,
+.portfolio,
+.services {
+  min-width: 49px;
+}
+.portfolio,
+.services {
+  min-width: 67px;
+}
+.portfolio {
+  min-width: 64px;
+}
+.process {
+  min-width: 60px;
+}
+.contact,
+.process,
+.process1 {
+  text-decoration: none;
+  position: relative;
+  text-transform: capitalize;
+  color: inherit;
+  display: inline-block;
+}
+.process1 {
+  min-width: 92px;
+  white-space: nowrap;
+}
+.contact {
+  min-width: 64px;
+}
+.navigation {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  gap: var(--gap-xl);
+}
+.navbar,
+.navigationWrapper {
+  display: flex;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.navigationWrapper {
+  width: 700px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-xl-7);
+}
+.navbar {
+  align-self: stretch;
+  background-color: var(--secondary-color-04);
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: var(--padding-lg-2) var(--padding-61xl) var(--padding-lg-3);
+  top: 0;
+  z-index: 99;
+  position: sticky;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--body-18px-regular-size);
+  color: var(--color-black);
+  font-family: var(--body-18px-regular);
+}
+@media screen and (max-width: 1125px) {
+  .navigation {
+    display: none;
+  }
+  .navigationWrapper {
+    width: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .navbar {
+    padding-left: var(--padding-21xl);
+    padding-right: var(--padding-21xl);
+    box-sizing: border-box;
+  }
+}

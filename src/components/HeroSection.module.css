@@ -1,0 +1,108 @@
+.bgIcon {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.transformingSpacesInspiring {
+  margin: 0;
+  width: 1291px;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.03em;
+  line-height: 110px;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 125%;
+  flex-shrink: 0;
+}
+.functionalSpacesTailored,
+.weSpecialiseIn {
+  margin: 0;
+}
+.text,
+.weSpecialiseInContainer {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.weSpecialiseInContainer {
+  margin: 0;
+  width: 929px;
+  position: relative;
+  font-size: var(--body-34px-regular-size);
+  text-transform: capitalize;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  padding-left: var(--padding-xl);
+  padding-right: var(--padding-xl);
+}
+.text {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  gap: var(--gap-12xl);
+}
+.btn {
+  width: 243px;
+  height: 50px;
+  backdrop-filter: blur(8px);
+}
+.content,
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+}
+.content {
+  width: calc(100% - 403px);
+  margin: 0 !important;
+  position: absolute;
+  top: 227px;
+  right: 201.5px;
+  left: 201.5px;
+  min-height: 445px;
+  z-index: 1;
+}
+.heroSection {
+  align-self: stretch;
+  overflow: hidden;
+  padding: var(--padding-12xs) 0;
+  box-sizing: border-box;
+  position: relative;
+  min-height: 843px;
+  text-align: center;
+  font-size: var(--font-size-101xl);
+  color: var(--neutral-08);
+  font-family: var(--body-18px-regular);
+}
+@media screen and (max-width: 800px) {
+  .transformingSpacesInspiring {
+    font-size: var(--font-size-29xl);
+    line-height: 66px;
+  }
+  .weSpecialiseInContainer {
+    font-size: var(--font-size-8xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .transformingSpacesInspiring {
+    font-size: var(--font-size-11xl);
+    line-height: 44px;
+  }
+  .weSpecialiseInContainer {
+    font-size: var(--body-20px-regular-size);
+  }
+  .btn {
+    width: calc(100% - 40px);
+  }
+}
