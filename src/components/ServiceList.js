@@ -5,7 +5,31 @@ import styles from "./ServiceList.module.css";
 const ServiceList = ({ className = "" }) => {
   return (
     <section className={[styles.serviceList, className].join(" ")}>
-      <form className={styles.serviceItems}>
+      <div className={styles.overviewContentParent}>
+        <div className={styles.overviewContent}>
+          <Button
+            className={styles.overviewContentChild}
+            disableElevation
+            variant="contained"
+            sx={{
+              textTransform: "none",
+              color: "#181818",
+              fontSize: "14",
+              background: "#f5f5f5",
+              borderRadius: "25px",
+              "&:hover": { background: "#f5f5f5" },
+              width: 153,
+              height: 35,
+            }}
+          >
+            OUR SERVICES
+          </Button>
+        </div>
+        <h1 className={styles.aBriefOverview}>
+          A brief overview of the services offered
+        </h1>
+      </div>
+      <div className={styles.serviceItems}>
         <div className={styles.serviceItem}>
           <div className={styles.serviceGrid}>
             <div className={styles.serviceCardParent}>
@@ -143,7 +167,7 @@ const ServiceList = ({ className = "" }) => {
             SCHEDULE A CONSULTATION
           </Button>
         </div>
-      </form>
+      </div>
     </section>
   );
 };

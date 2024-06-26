@@ -1,35 +1,3 @@
-.overviewContentChild {
-  height: 35px;
-  width: 153px;
-}
-.overviewContent {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 0 var(--padding-xl);
-}
-.aBriefOverview {
-  margin: 0;
-  align-self: stretch;
-  height: 185px;
-  position: relative;
-  font-size: inherit;
-  text-transform: uppercase;
-  font-weight: 300;
-  font-family: inherit;
-  display: inline-block;
-}
-.overviewContentParent {
-  width: 1060px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 40px;
-  max-width: 100%;
-}
 .bgIcon,
 .servicesIntro {
   align-self: stretch;
