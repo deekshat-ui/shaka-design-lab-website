@@ -1,9 +1,28 @@
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import styles from "./Navbar.module.css";
 
 const Navbar = ({ className = "" }) => {
+  const [scrolled, setScrolled] = React.useState(false);
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    if (offset > 50) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  });
+  let navbarClasses = [styles.navbar];
+  if (scrolled) {
+    navbarClasses.push(styles.scrolled);
+  }
+
   return (
-    <header className={[styles.navbar, className].join(" ")}>
+    <header className={navbarClasses.join(" ")}>
       <img
         className={styles.navbarLogoIcon}
         loading="lazy"
@@ -12,14 +31,13 @@ const Navbar = ({ className = "" }) => {
       />
       <div className={styles.navigationWrapper}>
         <div className={styles.navigation}>
-          <div className={styles.navigationBackground} />
-          <a className={styles.home}>Home</a>
-          <a className={styles.about}>About</a>
-          <a className={styles.services}>Services</a>
-          <a className={styles.portfolio}>Portfolio</a>
-          <a className={styles.process}>Process</a>
-          <a className={styles.process1}>3D Services</a>
-          <a className={styles.contact}>Contact</a>
+          <a className={styles.navItems}>Home</a>
+          <a className={styles.navItems}>About</a>
+          <a className={styles.navItems}>Services</a>
+          <a className={styles.navItems}>Portfolio</a>
+          <a className={styles.navItems}>Process</a>
+          <a className={styles.navItems}>3D Services</a>
+          <a className={styles.navItems}>Contact</a>
         </div>
       </div>
     </header>
