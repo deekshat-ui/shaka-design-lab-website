@@ -1,9 +1,9 @@
 .bgIcon {
-  align-self: stretch;
+  align-self: normal;
   position: relative;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
+  /* max-width: 100%; */
+  /* overflow: hidden; */
+  /* max-height: 100%; */
   object-fit: cover;
 }
 .transformingSpacesInspiring {
@@ -12,7 +12,7 @@
   position: relative;
   font-size: inherit;
   letter-spacing: -0.03em;
-  line-height: 110px;
+  line-height: 100px;
   text-transform: capitalize;
   font-weight: 400;
   font-family: inherit;
@@ -56,14 +56,19 @@
   backdrop-filter: blur(8px);
 }
 .content {
-  width: calc(100% - 403px);
+  display: flex;
+  width: 65%;
   margin: 0 !important;
   position: absolute;
   top: 227px;
-  right: 201.5px;
-  left: 201.5px;
+  /* right: 201.5px; */
+  /* left: 201.5px; */
   min-height: 445px;
   z-index: 1;
+  flex-direction: column;
+  /* flex-wrap: nowrap; */
+  align-items: center;
+  justify-content: space-around;
 }
 .heroSection {
   display: flex;
@@ -84,9 +89,14 @@
   color: var(--neutral-08);
   font-family: var(--body-18px-regular);
 }
+@media screen and (max-width: 1500px) {
+  .bgIcon {
+    align-self: auto;
+  }
+}
 @media screen and (max-width: 800px) {
   .transformingSpacesInspiring {
-    font-size: var(--font-size-29xl);
+    font-size: 75px;
     line-height: 66px;
   }
   .weSpecialiseInContainer {
@@ -94,8 +104,11 @@
   }
 }
 @media screen and (max-width: 450px) {
+  .content {
+    top: 10rem;
+  }
   .transformingSpacesInspiring {
-    font-size: var(--font-size-11xl);
+    font-size: 40px;
     line-height: 44px;
   }
   .weSpecialiseInContainer {
