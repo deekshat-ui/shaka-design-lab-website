@@ -3,12 +3,11 @@
   width: 110px;
 }
 .portfolioTitleContainerWrapper {
-  width: 1232.5px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  padding: 0 var(--padding-xl);
   box-sizing: border-box;
   max-width: 100%;
 }
@@ -62,15 +61,14 @@
   align-self: stretch;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: space-between;
-  gap: var(--gap-xl);
+  justify-content: space-around;
 }
 .headTitle {
-  width: 1280px;
+  width: 24em;
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-start;
-  padding: var(--padding-21xl) var(--padding-4xl) 0 var(--padding-11xs);
+  /* padding: var(--padding-21xl) var(--padding-4xl) 0 var(--padding-11xs); */
   box-sizing: border-box;
   gap: var(--gap-53xl);
   text-align: left;
@@ -79,10 +77,6 @@
   font-family: var(--body-18px-regular);
 }
 @media screen and (max-width: 1125px) {
-  .atShakaDesignLabWeBelievWrapper,
-  .trustTheProcess {
-    flex: 1;
-  }
   .process {
     flex-wrap: wrap;
     justify-content: center;
@@ -105,6 +99,6 @@
     font-size: var(--font-size-17xl);
   }
   .headTitle {
-    gap: var(--gap-lg);
+    gap: 20px;
   }
 }

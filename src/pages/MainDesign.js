@@ -8,6 +8,7 @@ import Projects from "../components/Projects";
 import LetsTalk from "../components/LetsTalk";
 import GetInTouch from "../components/GetInTouch";
 import styles from "./MainDesign.module.css";
+import videoBg from "../assets/video-1.mp4";
 
 const MainDesign = () => {
   return (
@@ -17,16 +18,8 @@ const MainDesign = () => {
       <Highlights />
       <ServiceList />
       <section className={styles.banner}>
-        <img className={styles.bgIcon} alt="" src="/bg-1@2x.png" />
+        <video className={styles.bgVideo} src={videoBg} autoPlay loop muted />
         <h1 className={styles.craftedBeauty}>Crafted Beauty</h1>
-        <div className={styles.play1Wrapper}>
-          <img
-            className={styles.play1Icon}
-            loading="lazy"
-            alt=""
-            src="/play-1.svg"
-          />
-        </div>
       </section>
       <section className={styles.blog}>
         <HeadTitle />

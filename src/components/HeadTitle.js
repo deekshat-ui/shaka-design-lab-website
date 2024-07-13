@@ -21,7 +21,7 @@ const HeadTitle = ({ className = "" }) => {
             height: 35,
           }}
         >
-          Portfolio
+          PORTFOLIO
         </Button>
       </div>
       <div className={styles.process}>

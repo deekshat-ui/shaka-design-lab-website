@@ -1,24 +1,41 @@
+import React, { useEffect, useState } from "react";
 import { Button } from "@mui/material";
+import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 import styles from "./HeroSection.module.css";
+import heroVideo from "../assets/hero-section-vid.mov";
+// import heroVideo from "../assets/hero-section-video.mp4";
 
 const HeroSection = ({ className = "" }) => {
   return (
     <section className={[styles.heroSection, className].join(" ")}>
-      <img className={styles.bgIcon} alt="" src="/bg@2x.png" />
-      <div className={styles.content}>
+      {/* <img className={styles.bgIcon} alt="" src="/bg@2x.png" /> */}
+      <video className={styles.bgIcon} src={heroVideo} autoPlay loop muted />
+      {/* <video autoPlay loop muted className="bg-vid">
+        <source src={heroVideo} type="video/mp4" />
+      </video> */}
+      <motion.div
+        className={styles.content}
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 1.5,
+          delay: 3.6,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
+      >
         <div className={styles.text}>
-          <h1 className={styles.transformingSpacesInspiring}>
+          <motion.h1 className={styles.transformingSpacesInspiring}>
             TRANSFORMING SPACES, INSPIRING LIVES
-          </h1>
-          <h1 className={styles.weSpecialiseInContainer}>
+          </motion.h1>
+          <motion.h1 className={styles.weSpecialiseInContainer}>
             <p
               className={styles.weSpecialiseIn}
             >{`We specialise in creating beautiful, `}</p>
             <p className={styles.functionalSpacesTailored}>
               functional spaces tailored to your unique style and needs.
             </p>
-          </h1>
+          </motion.h1>
         </div>
         <Button
           className={styles.btn}
@@ -37,7 +54,7 @@ const HeroSection = ({ className = "" }) => {
         >
           DISCOVER MORE
         </Button>
-      </div>
+      </motion.div>
     </section>
   );
 };

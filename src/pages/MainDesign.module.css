@@ -1,4 +1,4 @@
-.bgIcon,
+.bgVideo,
 .servicesIntro {
   align-self: stretch;
   max-width: 100%;
@@ -15,7 +15,7 @@
   color: var(--neutral-01);
   font-family: var(--body-18px-regular);
 }
-.bgIcon {
+.bgVideo {
   flex: 1;
   position: absolute;
   margin: 0 !important;
@@ -53,7 +53,6 @@
   flex-shrink: 0;
 }
 .banner,
-.blog,
 .play1Wrapper {
   display: flex;
   align-items: flex-start;
@@ -72,7 +71,7 @@
   align-self: stretch;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: var(--padding-64xl) 110px var(--padding-11xl) 237px;
+  padding: 5rem 2rem 5rem 2rem;
   position: relative;
   gap: var(--gap-36xl);
   text-align: center;
@@ -81,10 +80,14 @@
   font-family: var(--body-18px-regular);
 }
 .blog {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
   background-color: var(--secondary-color-04);
   overflow: hidden;
   flex-direction: column;
-  padding: 0 0 64px var(--padding-61xl);
+  padding: 5rem 0 5rem 0;
   gap: 60px;
 }
 .shakaDesignsLlp {
@@ -147,16 +150,10 @@
     gap: var(--gap-xl);
   }
   .craftedBeauty {
-    font-size: 50px;
+    font-size: 80px;
   }
-  .banner,
   .blog {
     box-sizing: border-box;
-  }
-  .banner {
-    gap: var(--gap-8xl);
-    padding-left: 118px;
-    padding-right: 55px;
   }
   .blog {
     gap: 30px;
@@ -169,12 +166,7 @@
     font-size: var(--font-size-17xl);
   }
   .craftedBeauty {
-    font-size: var(--font-size-11xl);
-  }
-  .banner {
-    padding-left: var(--padding-xl);
-    padding-right: var(--padding-xl);
-    box-sizing: border-box;
+    font-size: 60px;
   }
   .blog {
     gap: 15px;
