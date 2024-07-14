@@ -1,0 +1,66 @@
+/* HorizontalScrollCarousel styles */
+.horizontalScrollCarousel {
+  flex-direction: row;
+  position: relative;
+  height: 100%;
+  /* background-color: #171717; */
+}
+
+.carouselContainer {
+  position: sticky;
+  top: 0;
+  display: flex;
+  /* width: 100em; */
+  /* height: 100vh; */
+  align-items: center;
+  overflow: hidden;
+}
+
+.carouselContent {
+  display: flex;
+  gap: 1rem; /* gap-4 */
+}
+
+/* Card styles */
+.card {
+  position: relative;
+  height: 450px;
+  width: 450px;
+  overflow: hidden;
+  background-color: #e5e5e5; /* bg-neutral-200 */
+}
+
+.cardBackground {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  transition: transform 0.3s;
+  background-size: cover;
+  background-position: center;
+}
+
+.card:hover .cardBackground {
+  transform: scale(1.1);
+}
+
+.cardContent {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  display: grid;
+  place-content: center;
+}
+
+.cardTitle {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0)
+  );
+  padding: 2rem; /* p-8 */
+  font-size: 3.75rem; /* text-6xl */
+  font-weight: 900;
+  text-transform: uppercase;
+  color: white;
+  backdrop-filter: blur(8px);
+}

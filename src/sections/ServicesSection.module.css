@@ -1,0 +1,403 @@
+.overviewContentParent {
+  width: 100%;
+  height: 7em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  max-width: 100%;
+  flex-wrap: nowrap;
+  font-size: xx-large;
+}
+.overviewContent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+}
+.overviewContentChild {
+  height: 35px;
+  width: 153px;
+}
+.aBriefOverview {
+  margin: 0;
+  align-self: stretch;
+  height: 185px;
+  position: relative;
+  font-size: inherit;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: inherit;
+  display: inline-block;
+}
+.serviceDetails {
+  width: 10em;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  height: 40.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs-5) 0 0;
+  box-sizing: border-box;
+  font-family: var(--body-18px-regular);
+  font-size: var(--font-size-7xl);
+  color: var(--neutral-01);
+}
+.arrowRight1 {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.serviceCard {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.serviceBackgrounds {
+  align-self: stretch;
+  height: 1px;
+  position: relative;
+  background-color: var(--color-gray-100);
+}
+.frameChild,
+.serviceCardParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.serviceCardParent {
+  align-self: stretch;
+  gap: var(--gap-xs);
+}
+.frameChild {
+  width: 222px;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  height: 40.5px;
+  padding: var(--padding-3xs-5) 0 0;
+  box-sizing: border-box;
+  font-family: var(--body-18px-regular);
+  font-size: var(--font-size-7xl);
+  color: var(--neutral-04);
+}
+.arrowRight11 {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frameGroup {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.frameItem {
+  align-self: stretch;
+  height: 1px;
+  position: relative;
+  background-color: var(--color-gray-200);
+}
+.frameInner,
+.frameParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameParent {
+  align-self: stretch;
+  gap: var(--gap-xs);
+}
+.frameInner {
+  width: 137px;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  height: 40.5px;
+  padding: var(--padding-3xs-5) 0 0;
+  box-sizing: border-box;
+  font-family: var(--body-18px-regular);
+  font-size: var(--font-size-7xl);
+  color: var(--neutral-04);
+}
+.arrowRight2 {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frameDiv {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.rectangleDiv {
+  align-self: stretch;
+  height: 1px;
+  position: relative;
+  background-color: var(--color-gray-200);
+}
+.frameContainer,
+.frameInput {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameContainer {
+  align-self: stretch;
+  gap: var(--gap-xs);
+}
+.frameInput {
+  width: 153px;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  height: 40.5px;
+  padding: var(--padding-3xs-5) 0 0;
+  box-sizing: border-box;
+  font-family: var(--body-18px-regular);
+  font-size: var(--font-size-7xl);
+  color: var(--neutral-04);
+}
+.arrowRight12 {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frameParent2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.frameChild1 {
+  align-self: stretch;
+  height: 1px;
+  position: relative;
+  background-color: var(--color-gray-200);
+}
+.frameParent1,
+.serviceGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameParent1 {
+  align-self: stretch;
+  gap: var(--gap-xs);
+}
+.serviceGrid {
+  width: 600px;
+  gap: var(--gap-27xl);
+  min-width: 600px;
+  max-width: 100%;
+}
+.descriptionList {
+  height: 35px;
+  width: 205px;
+}
+.customDesigns {
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-family: var(--body-18px-regular);
+  color: var(--neutral-01);
+  text-align: center;
+  display: inline-block;
+  min-width: 119px;
+}
+.descriptionList1 {
+  border-radius: var(--br-6xl);
+  border: 1px solid var(--neutral-01);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-6xs) var(--padding-10xl);
+  white-space: nowrap;
+}
+.descriptionList2 {
+  height: 35px;
+  width: 169px;
+}
+.colorConsultation {
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-family: var(--body-18px-regular);
+  color: var(--neutral-01);
+  text-align: center;
+}
+.descriptionList3 {
+  border-radius: var(--br-6xl);
+  border: 1px solid var(--neutral-01);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-6xs) var(--padding-10xl);
+  white-space: nowrap;
+}
+.descriptionItems {
+  width: 751px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-147xl) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-base);
+  min-height: 86px;
+  max-width: 128%;
+  flex-shrink: 0;
+}
+.fromCozyApartments {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--body-16px-regular-size);
+  line-height: 30px;
+  font-family: var(--body-18px-regular);
+  color: var(--neutral-02);
+  text-align: left;
+}
+.serviceSummary {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.serviceDescription,
+.serviceItem {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.serviceDescription {
+  width: 590px;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-191xl) 0;
+  box-sizing: border-box;
+  gap: var(--gap-15xl);
+  min-width: 590px;
+}
+.serviceItem {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.btn {
+  align-self: stretch;
+  width: 305px;
+}
+.consultation {
+  align-self: stretch;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+}
+.serviceItems,
+.serviceList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 100%;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.serviceItems {
+  margin: 0;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-56xl);
+}
+.serviceList {
+  align-self: stretch;
+  padding: var(--padding-51xl) var(--padding-61xl) var(--padding-51xl);
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1350px) {
+  .serviceDescription,
+  .serviceGrid {
+    flex: 1;
+  }
+  .serviceItem {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1125px) {
+  .descriptionItems {
+    padding-right: var(--padding-64xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 800px) {
+  .serviceGrid {
+    gap: var(--gap-4xl);
+    min-width: 100%;
+  }
+  .descriptionItems {
+    padding-right: var(--padding-22xl);
+    box-sizing: border-box;
+  }
+  .serviceDescription {
+    gap: var(--gap-mid);
+    min-width: 100%;
+  }
+  .serviceItems {
+    gap: var(--gap-18xl);
+  }
+  .serviceList {
+    padding-left: var(--padding-21xl);
+    padding-right: var(--padding-21xl);
+    padding-bottom: var(--padding-26xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .frameDiv,
+  .frameGroup,
+  .frameParent2,
+  .serviceCard {
+    flex-wrap: wrap;
+  }
+  .serviceDescription {
+    padding-bottom: var(--padding-117xl);
+    box-sizing: border-box;
+  }
+  .serviceItems {
+    gap: var(--gap-lgi);
+  }
+}

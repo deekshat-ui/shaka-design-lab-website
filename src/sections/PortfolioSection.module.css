@@ -1,0 +1,32 @@
+.blog {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  background-color: var(--secondary-color-04);
+  overflow: hidden;
+  flex-direction: column;
+  padding: 5rem 0 5rem 0;
+  gap: 60px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+@media screen and (max-width: 1125px) {
+  .blog {
+    padding-bottom: 42px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 800px) {
+  .blog {
+    gap: 30px;
+    padding-left: var(--padding-21xl);
+    padding-bottom: 27px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .blog {
+    gap: 15px;
+  }
+}

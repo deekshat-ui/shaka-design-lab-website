@@ -5,7 +5,7 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import MainDesign from "./pages/MainDesign";
+import HomePage from "./pages/HomePage";
 
 function App() {
   const action = useNavigationType();
@@ -45,7 +45,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<MainDesign />} />
+      <Route path="/" element={<HomePage />} />
     </Routes>
   );
 }

@@ -1,0 +1,251 @@
+.shakaLogo {
+  height: 48px;
+  width: 370px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 800;
+  display: none;
+  max-width: 100%;
+}
+.groupIcon {
+  height: 101.4px;
+  width: 101.5px;
+  position: relative;
+}
+.groupWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-40xl);
+}
+.groupIcon1 {
+  width: 220px;
+  height: 28.8px;
+  position: relative;
+}
+.aHussainpur,
+.aSubhamApartment,
+.kolkata700107 {
+  margin: 0;
+}
+.aSubhamApartmentContainer,
+.contact {
+  position: relative;
+  text-transform: capitalize;
+}
+.shakadesignscom1 {
+  text-decoration: underline;
+}
+.shakadesignscom {
+  color: inherit;
+}
+.email {
+  height: 17px;
+  position: relative;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+}
+.address,
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.address {
+  justify-content: flex-start;
+  gap: var(--gap-2xs-2);
+}
+.contactDetails {
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-xs-8);
+  font-size: var(--font-size-sm);
+  color: var(--neutral-03);
+}
+.socialIconsfacebooknegative {
+  height: 25px;
+  width: 25px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.socialIconsfacebooknegativeWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.socialIconsinstagramnegativ {
+  height: 25px;
+  width: 25px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.socialIconsinstagramnegativWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.socialIconsxTwitterorigi {
+  height: 25px;
+  width: 25px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.socialIconsxTwitterorigiWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.socialIconspinterestorigina {
+  height: 25px;
+  width: 25px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.socialIcons,
+.socialIconspinterestoriginaWrapper,
+.socialLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.socialIcons,
+.socialLinks {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.socialIcons {
+  gap: var(--gap-xl);
+}
+.socialLinks {
+  padding: var(--padding-41xl) 0 0;
+}
+.aboutUs {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 800;
+  display: inline-block;
+  min-width: 79px;
+}
+.contact1,
+.faqs,
+.privacyPolicy,
+.services,
+.termsOfService,
+.whyChooseUs {
+  position: relative;
+  text-transform: capitalize;
+  display: inline-block;
+  min-width: 117px;
+}
+.contact1,
+.faqs,
+.privacyPolicy,
+.services,
+.termsOfService {
+  min-width: 60px;
+}
+.contact1,
+.faqs,
+.privacyPolicy,
+.termsOfService {
+  min-width: 57px;
+}
+.faqs,
+.privacyPolicy,
+.termsOfService {
+  min-width: 93px;
+}
+.faqs,
+.termsOfService {
+  min-width: 123px;
+}
+.faqs {
+  min-width: 36px;
+}
+.aboutContent,
+.footerLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footerLinks {
+  align-self: stretch;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+  color: var(--neutral-03);
+}
+.aboutContent {
+  height: 195px;
+  flex: 1;
+  justify-content: center;
+  padding: 0;
+  box-sizing: border-box;
+  gap: var(--gap-6xl);
+}
+.aboutContentWrapper {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-23xl-5) var(--padding-11xl);
+}
+.aboutContentWrapper,
+.getInTouch,
+.social {
+  display: flex;
+  flex-direction: row;
+}
+.social {
+  width: 291px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-63xl);
+  font-size: var(--body-16px-regular-size);
+}
+.getInTouch {
+  align-self: stretch;
+  background-color: var(--secondary-color-04);
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: var(--padding-18xl) var(--padding-31xl);
+  box-sizing: border-box;
+  max-width: 100%;
+  gap: var(--gap-xl);
+  z-index: 1;
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--neutral-01);
+  font-family: var(--body-18px-regular);
+}
+@media screen and (max-width: 800px) {
+  .shakaLogo {
+    font-size: var(--body-32px-regular-size);
+  }
+  .getInTouch {
+    flex-wrap: wrap;
+    padding-left: var(--padding-6xl);
+    padding-right: var(--padding-6xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .shakaLogo {
+    font-size: var(--font-size-5xl);
+  }
+  .social {
+    gap: var(--gap-22xl);
+  }
+  .getInTouch {
+    padding-top: var(--padding-5xl);
+    padding-bottom: var(--padding-5xl);
+    box-sizing: border-box;
+  }
+}
