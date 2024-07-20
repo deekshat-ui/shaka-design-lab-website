@@ -6,6 +6,8 @@ import {
   useLocation,
 } from "react-router-dom";
 import HomePage from "./pages/HomePage";
+import ProcessPage from "./pages/ProcessPage";
+import VRServicesPage from "./pages/VRServicesPage";
 
 function App() {
   const action = useNavigationType();
@@ -46,6 +48,8 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
+      <Route path="/process" element={<ProcessPage />} />
+      <Route path="/vrservices" element={<VRServicesPage />} />
     </Routes>
   );
 }

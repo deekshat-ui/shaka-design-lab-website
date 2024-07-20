@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { Button } from "@mui/material";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import PropTypes from "prop-types";
 import styles from "./Navbar.module.css";
 
 const Navbar = ({ className = "" }) => {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("");
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const handleScroll = () => {
     const offset = window.scrollY;
@@ -45,12 +47,30 @@ const Navbar = ({ className = "" }) => {
   }, []);
 
   const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setActiveSection(sectionId);
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: sectionId } });
+    } else {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+        setActiveSection(sectionId);
+      }
     }
   };
+
+  useEffect(() => {
+    if (
+      location.pathname === "/" &&
+      location.state &&
+      location.state.scrollTo
+    ) {
+      const element = document.getElementById(location.state.scrollTo);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+        setActiveSection(location.state.scrollTo);
+      }
+    }
+  }, [location]);
 
   let navbarClasses = [styles.navbar];
   if (scrolled) {
@@ -94,15 +114,15 @@ const Navbar = ({ className = "" }) => {
             Process
             <span className={styles.underline}></span>
           </a>
-          <a
+          <Link
+            to="/vrservices"
             className={`${styles.navItems} ${
               activeSection === "vrservicessection" ? styles.active : ""
             }`}
-            onClick={() => scrollToSection("vrservicessection")}
           >
             VR Services
             <span className={styles.underline}></span>
-          </a>
+          </Link>
           <a
             className={`${styles.navItems} ${
               activeSection === "messagesection" ? styles.active : ""
@@ -114,7 +134,6 @@ const Navbar = ({ className = "" }) => {
           </a>
         </div>
       </div>
-      {/* Button code commented out */}
     </header>
   );
 };

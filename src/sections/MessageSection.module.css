@@ -17,79 +17,23 @@
   box-sizing: border-box;
   max-width: 100%;
 }
-.inputFields,
-.inputFields1 {
-  border: 0;
+.inputFields {
   background-color: transparent;
   height: 35px;
-  width: 470px;
-  margin: 0 !important;
-  position: absolute;
-  top: 0;
-  left: 0;
+  width: 50em;
+  position: relative;
   font-family: var(--body-18px-regular);
   font-size: var(--body-18px-regular-size);
   color: var(--neutral-02);
 }
-.inputFields1 {
-  left: 500px;
-}
-.emailAddress {
-  position: relative;
-  text-transform: capitalize;
-  display: inline-block;
-  min-width: 112px;
-}
-.inputFieldsChild {
-  align-self: stretch;
-  height: 1px;
-  position: relative;
-  background-color: var(--color-silver);
-}
-.inputFields2 {
-  width: 970px;
-  margin: 0 !important;
-  position: absolute;
-  top: 99px;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-xs);
-  max-width: 100%;
-}
-.message {
-  position: relative;
-  text-transform: capitalize;
-  display: inline-block;
-  min-width: 72px;
-}
-.inputFieldsItem {
-  align-self: stretch;
-  height: 1px;
-  position: relative;
-  background-color: var(--color-silver);
-}
-.form,
-.inputFields3 {
-  width: 970px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  max-width: 100%;
-}
-.inputFields3 {
-  margin: 0 !important;
-  position: absolute;
-  top: 198px;
-  left: 0;
-  flex-direction: column;
-  gap: var(--gap-98xl);
-}
 .form {
+  display: flex;
   height: 338px;
-  flex-direction: row;
+  width: 970px;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  flex-direction: column;
   flex-wrap: wrap;
   position: relative;
   gap: 64px 28px;

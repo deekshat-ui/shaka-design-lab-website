@@ -32,7 +32,8 @@
 .aSubhamApartmentContainer,
 .contact {
   position: relative;
-  text-transform: capitalize;
+  font-weight: 600;
+  /* text-transform: capitalize; */
 }
 .shakadesignscom1 {
   text-decoration: underline;
@@ -43,7 +44,8 @@
 .email {
   height: 17px;
   position: relative;
-  text-transform: capitalize;
+  font-weight: 600;
+  /* text-transform: capitalize; */
   display: flex;
   align-items: center;
 }

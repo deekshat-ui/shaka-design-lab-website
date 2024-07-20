@@ -7,38 +7,36 @@ const ContactSection = ({ className = "" }) => {
       id="contactsection"
       className={[styles.getInTouch, className].join(" ")}
     >
-      <div className={styles.shakaLogo}>Shaka design lab</div>
       <div className={styles.contactDetails}>
         <div className={styles.address}>
-          <div className={styles.groupWrapper}>
-            <img
-              className={styles.groupIcon}
-              loading="lazy"
-              alt=""
-              src="/group.svg"
-            />
-          </div>
+          <img
+            className={styles.groupIcon}
+            loading="lazy"
+            alt=""
+            src="/group.svg"
+          />
+
           <img className={styles.groupIcon1} alt="" src="/group-1.svg" />
           <div className={styles.aSubhamApartmentContainer}>
-            <p
-              className={styles.aSubhamApartment}
-            >{`4A, Subham Apartment, `}</p>
-            <p className={styles.aHussainpur}>75/1/A Hussainpur,</p>
-            <p className={styles.kolkata700107}>Kolkata - 700107</p>
+            <p className={styles.aSubhamApartment}>
+              4A,&nbsp;Subham&nbsp;Apartment,
+            </p>
+            <p className={styles.aHussainpur}>75/1/A&nbsp;Hussainpur,</p>
+            <p className={styles.kolkata700107}>Kolkata&nbsp;-&nbsp;700107</p>
           </div>
-          <div
-            className={styles.contact}
-          >{`Phone number: 033-35034016 , 8777612563 `}</div>
+          <div className={styles.contact}>
+            Phone number:&nbsp;033-35034016,&nbsp;8777612563
+          </div>
           <div className={styles.email}>
             <span>
-              Email address: Business
+              Email address:&nbsp;
               <a
                 className={styles.shakadesignscom}
-                href="mailto:info@shakadesigns.com"
+                href="mailto:business@shakadesigns.com"
                 target="_blank"
               >
                 <span className={styles.shakadesignscom1}>
-                  @shakadesigns.com
+                  business@shakadesigns.com
                 </span>
               </a>
                
@@ -87,12 +85,8 @@ const ContactSection = ({ className = "" }) => {
           <div className={styles.aboutContent}>
             <div className={styles.aboutUs}>About us</div>
             <div className={styles.footerLinks}>
-              <div className={styles.whyChooseUs}>Why Choose Us?</div>
-              <div className={styles.services}>Services</div>
-              <div className={styles.contact1}>Contact</div>
               <div className={styles.privacyPolicy}>Privacy Policy</div>
               <div className={styles.termsOfService}>Terms of service</div>
-              <div className={styles.faqs}>FAQs</div>
             </div>
           </div>
         </div>

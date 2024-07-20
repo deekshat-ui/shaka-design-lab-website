@@ -1,5 +1,7 @@
 .accordion {
   width: 50em;
+  min-width: 30em;
+  max-width: 60em;
 }
 
 .accordionItem {

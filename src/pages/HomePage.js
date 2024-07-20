@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { Button } from "@mui/material";
 import Navbar from "../sections/Navbar";
 import HeroSection from "../sections/HeroSection";
@@ -10,10 +11,14 @@ import styles from "./HomePage.module.css";
 import HeroSectionVideo from "../assets/video-1.mp4";
 
 const HomePage = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <div className={styles.mainDesign}>
       <Navbar />
-      <HeroSection />
+      <HeroSection
+        onModalOpen={() => setIsModalOpen(true)}
+        onModalClose={() => setIsModalOpen(false)}
+      />
       <HighlightSection />
       <ServicesSection />
       <section className={styles.banner}>

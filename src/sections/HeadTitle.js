@@ -1,6 +1,7 @@
 import { Button } from "@mui/material";
 import PropTypes from "prop-types";
 import styles from "./HeadTitle.module.css";
+import { Link } from "react-router-dom";
 
 const HeadTitle = ({ className = "" }) => {
   return (
@@ -36,7 +37,11 @@ const HeadTitle = ({ className = "" }) => {
             </p>
             <p className={styles.blankLine}>&nbsp;</p>
             <p className={styles.seeOurProcess}>
-              <b className={styles.seeOurProcess1}>SEE OUR PROCESS</b>
+              <b className={styles.seeOurProcess1}>
+                <Link to="/process" color="black">
+                  SEE OUR PROCESS
+                </Link>
+              </b>
             </p>
           </div>
         </div>

@@ -1,0 +1,112 @@
+.shakaDesignsLlp {
+  flex: 1;
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  max-width: 100%;
+}
+.footer {
+  flex: 1;
+  background-color: var(--secondary-color-04);
+  flex-direction: row;
+  padding: 10.5px 0;
+  max-width: 100%;
+  z-index: 2;
+}
+.footer,
+.footerContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.footerContainer {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-12xs);
+  max-width: 100%;
+}
+.processContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 100px;
+  width: 100%;
+}
+.mainDesign {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  background-color: var(--neutral-08);
+  overflow: hidden;
+  flex-direction: column;
+  padding: 0 0 var(--padding-12xs);
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  font-size: var(--body-16px-regular-size);
+  color: var(--neutral-02);
+  font-family: var(--body-18px-regular);
+}
+@media screen and (max-width: 1125px) {
+  .craftedBeauty {
+    min-width: 100%;
+  }
+  .blog {
+    padding-bottom: 42px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 800px) {
+  .aBriefOverview {
+    font-size: var(--font-size-29xl);
+  }
+  .overviewContentParent {
+    gap: var(--gap-xl);
+  }
+  .craftedBeauty {
+    font-size: 80px;
+  }
+  .blog {
+    box-sizing: border-box;
+  }
+  .blog {
+    gap: 30px;
+    padding-left: var(--padding-21xl);
+    padding-bottom: 27px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .aBriefOverview {
+    font-size: var(--font-size-17xl);
+  }
+  .craftedBeauty {
+    font-size: 60px;
+  }
+  .blog {
+    gap: 15px;
+  }
+}
+.highlights {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10em;
+  text-align: center;
+  font-size: var(--body-34px-regular-size);
+  color: var(--color-black);
+  font-family: var(--body-18px-regular);
+  background-color: var(--secondary-color-04);
+}
+.accordion {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}

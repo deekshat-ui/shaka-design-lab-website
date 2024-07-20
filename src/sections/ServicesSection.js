@@ -32,12 +32,6 @@ const ServiceList = ({ className = "" }) => {
     },
   ];
 
-  const [activeIndex, setActiveIndex] = useState(-1);
-
-  const handleAccordionClick = (index) => {
-    setActiveIndex(index === activeIndex ? -1 : index);
-  };
-
   return (
     <section
       id="servicesection"
