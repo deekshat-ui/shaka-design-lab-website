@@ -1,0 +1,96 @@
+.getStarted1 {
+  margin: 0;
+  width: 612px;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.getStartedWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 100%;
+}
+.experienceYourDream {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: 30px;
+  /* line-height: 34px; */
+  font-weight: 200;
+  font-family: inherit;
+}
+.getInTouch {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  display: inline-block;
+  min-width: 93px;
+}
+
+.frameChild {
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
+.frameParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.getStarted,
+.getStartedInner {
+  display: flex;
+  align-items: flex-start;
+}
+.getStartedInner {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 20px;
+}
+.getStarted {
+  width: 100%;
+  background-color: var(--neutral-08);
+  max-width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 46px var(--padding-31xl);
+  box-sizing: border-box;
+  gap: 29px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  font-size: var(--h6-60-size);
+  color: var(--neutral-01);
+  font-family: var(--body-14px-regular);
+}
+@media screen and (max-width: 750px) {
+  .getStarted1 {
+    font-size: var(--font-size-29xl);
+  }
+  .getStarted {
+    padding-left: var(--padding-6xl);
+    padding-right: var(--padding-6xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .getStarted1 {
+    font-size: var(--font-size-17xl);
+  }
+  .experienceYourDream {
+    font-size: var(--body-16px-regular-size);
+    line-height: 27px;
+  }
+}

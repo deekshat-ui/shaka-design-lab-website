@@ -18,7 +18,7 @@ const HeroSection = ({ className = "" }) => {
       id="herosection"
       className={[styles.heroSection, className].join(" ")}
     >
-      <video className={styles.bgIcon} src={heroVideo} autoPlay loop muted />
+      <video className={styles.bgVideo} src={heroVideo} autoPlay loop muted />
       <motion.div
         className={styles.content}
         initial={{ opacity: 0, scale: 0.5 }}
@@ -68,92 +68,14 @@ const HeroSection = ({ className = "" }) => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        {/* <Box
-          sx={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-            width: 400,
-            bgcolor: "background.paper",
-            boxShadow: 24,
-            p: 4,
-            borderRadius: 2,
-          }}
-        >
-          <IconButton
-            aria-label="close"
-            onClick={handleClose}
-            sx={{
-              position: "absolute",
-              right: 8,
-              top: 8,
-              color: (theme) => theme.palette.grey[500],
-            }}
-          >
-            <CloseIcon />
-          </IconButton>
-          <h2 id="modal-modal-title">Contact Us</h2>
-          <form onSubmit={handleSubmit}>
-            <TextField
-              fullWidth
-              label="Name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              margin="normal"
-              required
-            />
-            <TextField
-              fullWidth
-              label="Email"
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              margin="normal"
-              required
-            />
-            <TextField
-              fullWidth
-              label="Message"
-              multiline
-              rows={4}
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              margin="normal"
-              required
-            />
-            <Button
-              type="submit"
-              className={styles.btn}
-              variant="text"
-              sx={{
-                color: "#000",
-                fontSize: "14px",
-                fontWeight: "bold",
-                textTransform: "uppercase",
-                background: "transparent",
-                border: "none",
-                borderRadius: "25px",
-                "&:hover": {
-                  background: "rgba(255, 255, 255, 0.1)",
-                  color: "#000",
-                },
-                width: 50,
-                height: 50,
-                padding: "10px 20px",
-              }}
-            >
-              Send
-            </Button>
-          </form>
-        </Box> */}
         <Box
           sx={{
             position: "absolute",
             top: "50%",
             left: "50%",
             transform: "translate(-50%, -50%)",
-            width: 1200,
+            height: 500,
+            width: 1000,
             bgcolor: "background.paper",
             boxShadow: 24,
             p: 4,

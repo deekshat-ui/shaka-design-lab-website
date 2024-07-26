@@ -1,0 +1,29 @@
+.loopWrap {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.motionSpan {
+  position: absolute;
+}
+
+.styledInput {
+  border: none;
+  color: #333;
+  background-color: unset;
+  /* width: 100%; */
+}
+
+.styledInputWrap {
+  position: relative;
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 576px) {
+  .styledInputWrap {
+    align-items: flex-end;
+  }
+}

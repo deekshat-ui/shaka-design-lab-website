@@ -34,7 +34,8 @@ const Accordion = ({ content }) => {
               activeIndex === index ? styles.open : ""
             }`}
           >
-            <p>{item.content}</p>
+            {/* <p>{item.content}</p> */}
+            <div dangerouslySetInnerHTML={{ __html: item.content }} />
           </div>
           <div className={styles.separator}></div>
         </div>
