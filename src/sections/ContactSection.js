@@ -35,11 +35,11 @@ const ContactSection = ({ className = "" }) => {
             </p>
           </div>
           <div className={styles.contact}>
-            Phone&nbsp;number:&nbsp;+917980889463,&nbsp;+918777612563,&nbsp;+913335163974
+            Phone&nbsp;number:&nbsp;7980889463,&nbsp;8777612563,&nbsp;+913335163974
           </div>
           <div className={styles.email}>
             <span>
-              Email address:&nbsp;
+              Email:&nbsp;
               <a
                 className={styles.shakadesignscom}
                 href="mailto:business@shakadesignlab.com"
