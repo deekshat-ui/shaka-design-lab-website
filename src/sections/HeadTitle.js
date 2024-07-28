@@ -14,12 +14,12 @@ const HeadTitle = ({ className = "" }) => {
           sx={{
             textTransform: "none",
             color: "#181818",
-            fontSize: "14",
             background: "#f5f5f5",
             borderRadius: "25px",
             "&:hover": { background: "#f5f5f5" },
             width: 110,
             height: 35,
+            fontSize: "1.1rem",
           }}
         >
           PORTFOLIO

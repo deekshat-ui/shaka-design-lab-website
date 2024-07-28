@@ -35,7 +35,7 @@ const ContactSection = ({ className = "" }) => {
             </p>
           </div>
           <div className={styles.contact}>
-            Phone number:&nbsp;+91 33-35163974,&nbsp;8777612563,&nbsp;7980889463
+            Phone&nbsp;number:&nbsp;+917980889463,&nbsp;+918777612563,&nbsp;+913335163974
           </div>
           <div className={styles.email}>
             <span>

@@ -160,13 +160,13 @@ const MessageSection = ({ className = "" }) => {
             onChange={(e) => setJobType(e.target.value)}
             label="Job Type"
           >
-            <MenuItem value="Commercial New Job">Commercial New Job</MenuItem>
+            <MenuItem value="Commercial New Job">Commercial-New Job</MenuItem>
             <MenuItem value="Commercial Renovation">
-              Commercial Renovation
+              Commercial-Renovation
             </MenuItem>
-            <MenuItem value="Residential New Job">Residential New Job</MenuItem>
+            <MenuItem value="Residential New Job">Residential-New Job</MenuItem>
             <MenuItem value="Residential Renovation">
-              Residential Renovation
+              Residential-Renovation
             </MenuItem>
           </Select>
         </FormControl>
