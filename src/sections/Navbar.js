@@ -6,6 +6,7 @@ import styles from "./Navbar.module.css";
 const Navbar = ({ className = "" }) => {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("");
+  const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -31,7 +32,7 @@ const Navbar = ({ className = "" }) => {
       const element = document.getElementById(section);
       if (element) {
         const rect = element.getBoundingClientRect();
-        if (rect.top <= 50 && rect.bottom >= 50) {
+        if (rect.top <= 10 && rect.bottom >= 10) {
           current = section;
           break;
         }
@@ -72,6 +73,10 @@ const Navbar = ({ className = "" }) => {
     }
   }, [location]);
 
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   let navbarClasses = [styles.navbar];
   if (scrolled) {
     navbarClasses.push(styles.scrolled);
@@ -86,12 +91,15 @@ const Navbar = ({ className = "" }) => {
         src="/navbar-logo.svg"
       />
       <div className={styles.navigationWrapper}>
-        <div className={styles.navigation}>
+        <div className={`${styles.navigation} ${menuOpen ? styles.open : ""}`}>
           <a
             className={`${styles.navItems} ${
               activeSection === "herosection" ? styles.active : ""
             }`}
-            onClick={() => scrollToSection("herosection")}
+            onClick={() => {
+              scrollToSection("herosection");
+              setMenuOpen(false);
+            }}
           >
             Home
             <span className={styles.underline}></span>
@@ -100,7 +108,10 @@ const Navbar = ({ className = "" }) => {
             className={`${styles.navItems} ${
               activeSection === "servicesection" ? styles.active : ""
             }`}
-            onClick={() => scrollToSection("servicesection")}
+            onClick={() => {
+              scrollToSection("servicesection");
+              setMenuOpen(false);
+            }}
           >
             Services
             <span className={styles.underline}></span>
@@ -109,7 +120,10 @@ const Navbar = ({ className = "" }) => {
             className={`${styles.navItems} ${
               activeSection === "processsection" ? styles.active : ""
             }`}
-            onClick={() => scrollToSection("processsection")}
+            onClick={() => {
+              scrollToSection("processsection");
+              setMenuOpen(false);
+            }}
           >
             Process
             <span className={styles.underline}></span>
@@ -119,6 +133,7 @@ const Navbar = ({ className = "" }) => {
             className={`${styles.navItems} ${
               activeSection === "vrservicessection" ? styles.active : ""
             }`}
+            onClick={() => setMenuOpen(false)}
           >
             VR Services
             <span className={styles.underline}></span>
@@ -127,12 +142,20 @@ const Navbar = ({ className = "" }) => {
             className={`${styles.navItems} ${
               activeSection === "messagesection" ? styles.active : ""
             }`}
-            onClick={() => scrollToSection("contactsection")}
+            onClick={() => {
+              scrollToSection("contactsection");
+              setMenuOpen(false);
+            }}
           >
             Contact
             <span className={styles.underline}></span>
           </a>
         </div>
+        <button className={styles.menuIcon} onClick={toggleMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </header>
   );

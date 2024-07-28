@@ -4,60 +4,65 @@
   left: 0;
   right: 0;
   height: 2px;
-  background-color: currentColor; /* This will use the text color */
+  background-color: currentColor;
   transform-origin: right;
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
 }
+
 .navItems:hover .underline,
 .navItems.active .underline {
   transform-origin: left;
   transform: scaleX(1);
 }
+
 .navItems.active {
-  /* Add any additional styles for the active state */
   font-weight: bold;
 }
+
 .navbarLogoIcon {
-  height: 4rem;
-  width: 6rem;
+  height: 64px;
+  width: 96px;
   position: relative;
 }
+
 .navItems {
-  /* min-width: 60px; */
   text-decoration: none;
   position: relative;
   text-transform: capitalize;
   color: inherit;
   display: inline-block;
   cursor: pointer;
+  font-size: 18px;
 }
+
 .navigation {
   align-self: stretch;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-end;
   position: relative;
-  gap: 3em;
+  gap: 48px;
 }
+
 .btn {
-  width: 8.4em;
+  width: 134px;
   height: 40px;
   backdrop-filter: blur(10px);
 }
+
 .navigationWrapper {
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
   max-width: 100%;
-  /* width: 700px; */
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
-  /* padding: 0 0 var(--padding-xl-7); */
 }
+
 .navbar {
   display: flex;
   position: fixed;
@@ -70,33 +75,174 @@
   max-width: 100%;
   background-color: transparent;
   z-index: 999;
-  padding: var(--padding-lg-2) var(--padding-61xl) var(--padding-lg-3);
+  padding: 20px 80px;
   text-align: left;
-  font-size: var(--body-18px-regular-size);
-  color: var(--color-black);
-  font-family: var(--body-18px-regular);
+  font-size: 18px;
+  color: #000;
+  font-family: inherit;
 }
-@media screen and (max-width: 1125px) {
-  /* .navigation {
-    display: none;
-  }
-  .navigationWrapper {
-    width: 0;
-  }
-  .navbarLogoIcon {
-    height: 3rem;
-    width: 5rem;
-  } */
-}
-@media screen and (max-width: 800px) {
-  /* .navbar {
-    padding-left: var(--padding-21xl);
-    padding-right: var(--padding-21xl);
-    box-sizing: border-box;
-  } */
-}
+
 .scrolled {
   top: 0;
   backdrop-filter: blur(8px);
   transition: backdrop-filter 0.5s ease-in-out;
+}
+
+.menuIcon {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.menuIcon span {
+  width: 30px;
+  height: 3px;
+  background: #000;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 12px 20px;
+  }
+
+  .navigationWrapper {
+    position: relative;
+  }
+
+  .navigation {
+    position: absolute;
+    right: -100%;
+    top: 100%;
+    flex-direction: column;
+    background-color: #fff;
+    width: 200px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navigation.open {
+    transform: translateX(0);
+  }
+
+  .navItems {
+    margin: 10px 0;
+  }
+
+  .menuIcon {
+    display: flex;
+  }
+
+  .btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .navigation {
+    display: flex !important;
+    transform: translateX(0) !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar {
+    padding: 16px 60px;
+  }
+
+  .navigation {
+    gap: 36px;
+  }
+
+  .navItems {
+    font-size: 16px;
+  }
+
+  .btn {
+    width: 120px;
+    height: 36px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbar {
+    padding: 14px 40px;
+  }
+
+  .navigation {
+    gap: 24px;
+  }
+
+  .navbarLogoIcon {
+    height: 56px;
+    width: 84px;
+  }
+
+  .navItems {
+    font-size: 15px;
+  }
+
+  .btn {
+    width: 110px;
+    height: 34px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 12px 30px;
+  }
+
+  .navigation {
+    gap: 20px;
+  }
+
+  .navbarLogoIcon {
+    height: 48px;
+    width: 72px;
+  }
+
+  .navItems {
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 100px;
+    height: 32px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .navigation {
+    gap: 16px;
+  }
+
+  .navbarLogoIcon {
+    height: 40px;
+    width: 60px;
+  }
+
+  .navItems {
+    font-size: 13px;
+  }
+
+  .btn {
+    width: 90px;
+    height: 30px;
+  }
 }

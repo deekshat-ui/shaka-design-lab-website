@@ -25,18 +25,18 @@ const ContactSection = ({ className = "" }) => {
             <p className={styles.kolkata700107}>Kolkata&nbsp;-&nbsp;700107</p>
           </div>
           <div className={styles.contact}>
-            Phone number:&nbsp;033-35034016,&nbsp;8777612563
+            Phone number:&nbsp;+91 33-35163974,&nbsp;8777612563,&nbsp;7980889463
           </div>
           <div className={styles.email}>
             <span>
               Email address:&nbsp;
               <a
                 className={styles.shakadesignscom}
-                href="mailto:business@shakadesigns.com"
+                href="mailto:business@shakadesignlab.com"
                 target="_blank"
               >
                 <span className={styles.shakadesignscom1}>
-                  business@shakadesigns.com
+                  business@shakadesignlab.com
                 </span>
               </a>
                

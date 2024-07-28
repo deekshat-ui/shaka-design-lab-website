@@ -1,87 +1,143 @@
 .contactUs {
   margin: 0;
   position: relative;
-  font-size: inherit;
+  font-size: 48px;
   letter-spacing: -0.03em;
   text-transform: capitalize;
   font-weight: 600;
   font-family: inherit;
 }
+
 .contactUsWrapper {
-  width: 970px;
+  width: 100%;
+  max-width: 970px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  padding: 0 var(--padding-xl);
   box-sizing: border-box;
-  max-width: 100%;
+  padding: 0 20px;
 }
+
 .inputFields {
   background-color: transparent;
-  height: 35px;
-  width: 50em;
+  width: 100%;
+  /* max-width: 470px; */
   position: relative;
-  font-family: var(--body-18px-regular);
-  font-size: var(--body-18px-regular-size);
-  color: var(--neutral-02);
+  font-family: inherit;
+  font-size: 18px;
+  color: #4d4d4d;
 }
+
 .form {
   display: flex;
-  height: 338px;
-  width: 970px;
+  width: 100%;
+  max-width: 970px;
   align-items: center;
   justify-content: center;
-  max-width: 100%;
   flex-direction: column;
-  flex-wrap: wrap;
   position: relative;
-  gap: 64px 28px;
-  font-size: var(--body-18px-regular-size);
-  color: var(--neutral-02);
+  gap: 32px;
+  font-size: 18px;
+  color: #4d4d4d;
+  padding: 0 20px;
 }
+
 .btn {
   height: 53px;
   width: 205px;
 }
+
 .letsTalk,
 .submit {
   display: flex;
   box-sizing: border-box;
   max-width: 100%;
 }
+
 .submit {
-  width: 970px;
+  width: 100%;
+  max-width: 970px;
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  padding: 0 var(--padding-xl);
+  padding: 0 20px;
 }
+
 .letsTalk {
   align-self: stretch;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: var(--padding-31xl) var(--padding-xl);
-  gap: var(--gap-36xl);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  gap: 36px;
   text-align: left;
-  font-size: var(--h4-70-size);
-  color: var(--color-black);
-  font-family: var(--body-18px-regular);
+  font-size: 48px;
+  color: #000;
+  font-family: inherit;
 }
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 1024px) {
   .contactUs {
-    font-size: var(--font-size-37xl);
+    font-size: 40px;
   }
+
+  .form {
+    gap: 24px;
+  }
+
   .letsTalk {
-    gap: var(--gap-8xl);
-    padding-top: var(--padding-13xl);
-    padding-bottom: var(--padding-13xl);
-    box-sizing: border-box;
+    gap: 28px;
   }
 }
-@media screen and (max-width: 450px) {
+
+@media screen and (max-width: 768px) {
   .contactUs {
-    font-size: var(--font-size-23xl);
+    font-size: 36px;
+  }
+
+  .inputFields {
+    font-size: 16px;
+  }
+
+  .form {
+    gap: 20px;
+  }
+
+  .btn {
+    height: 48px;
+    width: 180px;
+  }
+
+  .letsTalk {
+    gap: 24px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contactUs {
+    font-size: 28px;
+  }
+
+  .inputFields {
+    font-size: 14px;
+  }
+
+  .form {
+    gap: 16px;
+  }
+
+  .btn {
+    height: 44px;
+    width: 160px;
+  }
+
+  .letsTalk {
+    gap: 20px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }

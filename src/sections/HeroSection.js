@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Modal, TextField, IconButton, Box } from "@mui/material";
+import { Button, Modal, IconButton, Box } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
@@ -74,8 +74,6 @@ const HeroSection = ({ className = "" }) => {
             top: "50%",
             left: "50%",
             transform: "translate(-50%, -50%)",
-            height: 500,
-            width: 1000,
             bgcolor: "background.paper",
             boxShadow: 24,
             p: 4,
