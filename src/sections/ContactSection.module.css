@@ -227,6 +227,10 @@
   color: var(--neutral-01);
   font-family: var(--body-18px-regular);
 }
+.locationIcon {
+  font-weight: 800;
+  color: black;
+}
 @media screen and (max-width: 800px) {
   .shakaLogo {
     font-size: var(--body-32px-regular-size);

@@ -23,6 +23,16 @@ const ContactSection = ({ className = "" }) => {
             </p>
             <p className={styles.aHussainpur}>75/1/A&nbsp;Hussainpur,</p>
             <p className={styles.kolkata700107}>Kolkata&nbsp;-&nbsp;700107</p>
+            <p className={styles.kolkata700107}>
+              <a href="https://maps.app.goo.gl/jHdWmhG4Ap4VrktKA?g_st=com.google.maps.preview.copy">
+                <img
+                  className={styles.locationIcon}
+                  src="/map-icon.svg"
+                  loading="lazy"
+                  alt="Location"
+                />
+              </a>
+            </p>
           </div>
           <div className={styles.contact}>
             Phone number:&nbsp;+91 33-35163974,&nbsp;8777612563,&nbsp;7980889463

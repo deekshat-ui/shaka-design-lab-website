@@ -12,7 +12,11 @@ const VRServicesPage = () => {
     <div id="vrservicessection" className={styles.mainDesign}>
       <Navbar />
       <div className={styles.heroSection}>
-        <img className={styles.bgIcon} alt="" src="/vr-page-hero-img.jpg" />
+        <img
+          className={styles.bgIcon}
+          loading="lazy"
+          src="/vr-page-hero-img.jpg"
+        />
         <div className={styles.content}>
           <span>Experience the future of design with</span>
           <span>

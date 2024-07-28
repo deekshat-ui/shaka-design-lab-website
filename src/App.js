@@ -4,6 +4,7 @@ import {
   Route,
   useNavigationType,
   useLocation,
+  Navigate,
 } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import ProcessPage from "./pages/ProcessPage";
@@ -50,6 +51,7 @@ function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/process" element={<ProcessPage />} />
       <Route path="/vrservices" element={<VRServicesPage />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
 }
