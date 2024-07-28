@@ -4,7 +4,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 import styles from "./HeroSection.module.css";
-import heroVideo from "../assets/hero-section-vid.mov";
+import heroVideo from "../assets/hero-section-vid.mp4";
 import MessageSection from "../sections/MessageSection";
 
 const HeroSection = ({ className = "" }) => {

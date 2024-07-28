@@ -6,27 +6,22 @@
   background-color: var(--secondary-color-04);
   overflow: hidden;
   flex-direction: column;
-  padding: 5rem 0 5rem 0;
+  padding: 5rem 1rem;
   gap: 60px;
   box-sizing: border-box;
   max-width: 100%;
 }
-@media screen and (max-width: 1125px) {
+
+@media screen and (max-width: 600px) {
   .blog {
-    padding-bottom: 42px;
-    box-sizing: border-box;
-  }
-}
-@media screen and (max-width: 800px) {
-  .blog {
+    padding: 3rem 0.6rem;
     gap: 30px;
-    padding-left: var(--padding-21xl);
-    padding-bottom: 27px;
-    box-sizing: border-box;
   }
 }
-@media screen and (max-width: 450px) {
+
+@media screen and (max-width: 400px) {
   .blog {
-    gap: 15px;
+    padding: 2.5rem 0.5rem;
+    gap: 25px;
   }
 }

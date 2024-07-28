@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { Button } from "@mui/material";
 import Navbar from "../sections/Navbar";
 import VideoBannerComponent from "../components/VideoBannerComponent";
@@ -6,6 +7,7 @@ import ContactSection from "../sections/ContactSection";
 import styles from "./VRServicesPage.module.css";
 
 const VRServicesPage = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <div id="vrservicessection" className={styles.mainDesign}>
       <Navbar />
@@ -18,7 +20,10 @@ const VRServicesPage = () => {
           </span>
         </div>
       </div>
-      <GetInTouchSection />
+      <GetInTouchSection
+        onModalOpen={() => setIsModalOpen(true)}
+        onModalClose={() => setIsModalOpen(false)}
+      />
       <ContactSection />
       <div className={styles.footerContainer}>
         <div className={styles.footer}>

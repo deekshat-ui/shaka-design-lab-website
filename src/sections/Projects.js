@@ -52,8 +52,8 @@ const Projects = ({ className = "" }) => {
         <div className={styles.typeList1}>
           <div className={styles.commercial}>COMMERCIAL</div>
         </div>
-        <div className={styles.typeList2}>
-          <div className={styles.typeListChild} />
+        <div className={styles.typeList}>
+          <div className={styles.typeItems} />
         </div>
         <div className={styles.typeList3}>
           <div className={styles.renovations}>RENOVATIONS</div>
