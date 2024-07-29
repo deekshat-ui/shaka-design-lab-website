@@ -58,20 +58,24 @@ const ContactSection = ({ className = "" }) => {
         <div className={styles.socialLinks}>
           <div className={styles.socialIcons}>
             <div className={styles.socialIconsfacebooknegativeWrapper}>
-              <img
-                className={styles.socialIconsfacebooknegative}
-                loading="lazy"
-                alt=""
-                src="/social-iconsfacebooknegative.svg"
-              />
+              <a href="https://www.facebook.com/profile.php?id=61560902740018&mibextid=kFxxJD">
+                <img
+                  className={styles.socialIconsfacebooknegative}
+                  loading="lazy"
+                  alt=""
+                  src="/social-iconsfacebooknegative.svg"
+                />
+              </a>
             </div>
             <div className={styles.socialIconsinstagramnegativWrapper}>
-              <img
-                className={styles.socialIconsinstagramnegativ}
-                loading="lazy"
-                alt=""
-                src="/social-iconsinstagramnegative.svg"
-              />
+              <a href="https://www.instagram.com/shakadesignlab?igsh=YndjcXRkY2lrNGg1">
+                <img
+                  className={styles.socialIconsinstagramnegativ}
+                  loading="lazy"
+                  alt=""
+                  src="/social-iconsinstagramnegative.svg"
+                />
+              </a>
             </div>
             <div className={styles.socialIconsxTwitterorigiWrapper}>
               <img
