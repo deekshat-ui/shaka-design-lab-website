@@ -7,14 +7,14 @@ const HighlightSection = ({ className = "" }) => {
       <div id="animation_linear_scroll" className={styles.bar}>
         <div
           className={styles.elementGroup}
-          style={{ animationDelay: "calc(15s / 6 * (6 - 1) * -1)" }}
+          style={{ animationDelay: "calc(15s /7  * (7 - 1) * -1)" }}
         >
           <img className={styles.icon} loading="lazy" alt="" src="/icon.svg" />
           <h3 className={styles.childContainer}>No Hidden Costs</h3>
         </div>
         <div
           className={styles.elementGroup}
-          style={{ animationDelay: "calc(15s / 6 * (6 - 2) * -1)" }}
+          style={{ animationDelay: "calc(15s / 7 * (7 - 2) * -1)" }}
         >
           <img
             className={styles.icon}
@@ -26,7 +26,7 @@ const HighlightSection = ({ className = "" }) => {
         </div>
         <div
           className={styles.elementGroup}
-          style={{ animationDelay: "calc(15s / 6 * (6 - 3) * -1)" }}
+          style={{ animationDelay: "calc(15s / 7 * (7 - 3) * -1)" }}
         >
           <img
             className={styles.icon}
@@ -38,7 +38,7 @@ const HighlightSection = ({ className = "" }) => {
         </div>
         <div
           className={styles.elementGroup}
-          style={{ animationDelay: "calc(15s / 6 * (6 - 4) * -1)" }}
+          style={{ animationDelay: "calc(15s / 7 * (7 - 4) * -1)" }}
         >
           <img
             className={styles.icon}
@@ -50,7 +50,7 @@ const HighlightSection = ({ className = "" }) => {
         </div>
         <div
           className={styles.elementGroup}
-          style={{ animationDelay: "calc(15s / 6 * (6 - 5) * -1)" }}
+          style={{ animationDelay: "calc(15s / 7 * (7 - 5) * -1)" }}
         >
           <img
             className={styles.icon}
@@ -62,7 +62,7 @@ const HighlightSection = ({ className = "" }) => {
         </div>
         <div
           className={styles.elementGroup}
-          style={{ animationDelay: "calc(15s / 6 * (6 - 6) * -1)" }}
+          style={{ animationDelay: "calc(15s / 7 * (7 - 6) * -1)" }}
         >
           <img
             className={styles.icon}
@@ -74,7 +74,7 @@ const HighlightSection = ({ className = "" }) => {
         </div>
         <div
           className={styles.elementGroup}
-          style={{ animationDelay: "calc(15s / 6 * (6 - 7) * -1)" }}
+          style={{ animationDelay: "calc(15s / 7 * (7 - 7) * -1)" }}
         >
           <img
             className={styles.icon}
