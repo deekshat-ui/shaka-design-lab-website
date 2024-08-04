@@ -72,6 +72,18 @@ const HighlightSection = ({ className = "" }) => {
           />
           <h3 className={styles.childContainer}>Assured Warranty</h3>
         </div>
+        <div
+          className={styles.elementGroup}
+          style={{ animationDelay: "calc(15s / 6 * (6 - 7) * -1)" }}
+        >
+          <img
+            className={styles.icon}
+            loading="lazy"
+            alt=""
+            src="/icon-6.svg"
+          />
+          <h3 className={styles.childContainer}>Vastu Consultation</h3>
+        </div>
       </div>
     </section>
   );
