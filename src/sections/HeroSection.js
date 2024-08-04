@@ -4,7 +4,8 @@ import CloseIcon from "@mui/icons-material/Close";
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 import styles from "./HeroSection.module.css";
-import heroVideo from "../assets/hero-section-vid.mp4";
+import { Cloudinary } from "@cloudinary/url-gen";
+import { AdvancedVideo, lazyload } from "@cloudinary/react";
 import MessageSection from "../sections/MessageSection";
 
 const HeroSection = ({ className = "" }) => {
@@ -13,12 +14,27 @@ const HeroSection = ({ className = "" }) => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+  const cld = new Cloudinary({
+    cloud: {
+      cloudName: "dofo7drvd",
+    },
+  });
+
   return (
     <section
       id="herosection"
       className={[styles.heroSection, className].join(" ")}
     >
-      <video className={styles.bgVideo} src={heroVideo} autoPlay loop muted />
+      <AdvancedVideo
+        className={styles.bgVideo}
+        cldVid={cld
+          .video("hero-section-vid_t8rayq")
+          .delivery("q_auto")
+          .format("auto")}
+        autoPlay
+        loop
+        plugins={[lazyload()]}
+      />
       <motion.div
         className={styles.content}
         initial={{ opacity: 0, scale: 0.5 }}
