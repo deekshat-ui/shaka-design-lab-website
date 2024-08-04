@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Button, Modal, IconButton, Box } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import { motion } from "framer-motion";
@@ -33,6 +33,7 @@ const HeroSection = ({ className = "" }) => {
           .format("auto")}
         autoPlay
         loop
+        muted
         plugins={[lazyload()]}
       />
       <motion.div
