@@ -8,10 +8,18 @@ import PortfolioSection from "../sections/PortfolioSection";
 import MessageSection from "../sections/MessageSection";
 import ContactSection from "../sections/ContactSection";
 import styles from "./HomePage.module.css";
-import HeroSectionVideo from "../assets/video-1.mp4";
+import { Cloudinary } from "@cloudinary/url-gen";
+import { AdvancedVideo, lazyload } from "@cloudinary/react";
 
 const HomePage = () => {
+  const cld1 = new Cloudinary({
+    cloud: {
+      cloudName: "dofo7drvd",
+    },
+  });
+
   const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <div className={styles.mainDesign}>
       <Navbar />
@@ -22,12 +30,16 @@ const HomePage = () => {
       <HighlightSection />
       <ServicesSection />
       <section className={styles.banner}>
-        <video
+        <AdvancedVideo
           className={styles.bgVideo}
-          src={HeroSectionVideo}
+          cldVid={cld1
+            .video("banner-section-video")
+            .delivery("q_auto")
+            .format("auto")}
           autoPlay
           loop
           muted
+          plugins={[lazyload()]}
         />
         <h1 className={styles.craftedBeauty}>Crafted Beauty</h1>
       </section>

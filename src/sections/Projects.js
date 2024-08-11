@@ -3,37 +3,37 @@ import styles from "./Projects.module.css";
 import HorizontalScrollCarousel from "../components/HorizontalScrollCorouselComponent";
 const cards = [
   {
-    url: "/residential-img-3.png",
+    url: "residential-img-3",
     title: "Title 1",
     id: 1,
   },
   {
-    url: "/residential-img-2.png",
+    url: "residential-img-2",
     title: "Title 2",
     id: 2,
   },
   {
-    url: "/residential-img-1.png",
+    url: "residential-img-1",
     title: "Title 3",
     id: 3,
   },
   {
-    url: "/commercial-img-1.jpg",
+    url: "commercial-img-1",
     title: "Title 3",
     id: 4,
   },
   {
-    url: "/renovations-img-1.jpg",
+    url: "renovations-img-1",
     title: "Title 3",
     id: 5,
   },
   {
-    url: "/commercial-img-3.jpg",
+    url: "commercial-img-3",
     title: "Title 3",
     id: 6,
   },
   {
-    url: "/commercial-img-2.jpg",
+    url: "commercial-img-2",
     title: "Title 3",
     id: 7,
   },

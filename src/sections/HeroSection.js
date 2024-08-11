@@ -8,27 +8,23 @@ import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedVideo, lazyload } from "@cloudinary/react";
 import MessageSection from "../sections/MessageSection";
 
-const HeroSection = ({ className = "" }) => {
-  const [open, setOpen] = useState(false);
-
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
-
+const HeroSection = () => {
   const cld = new Cloudinary({
     cloud: {
       cloudName: "dofo7drvd",
     },
   });
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   return (
-    <section
-      id="herosection"
-      className={[styles.heroSection, className].join(" ")}
-    >
+    <section id="herosection" className={styles.heroSection}>
       <AdvancedVideo
         className={styles.bgVideo}
         cldVid={cld
-          .video("hero-section-vid_t8rayq")
+          .video("hero-section-video")
           .delivery("q_auto")
           .format("auto")}
         autoPlay
@@ -114,10 +110,6 @@ const HeroSection = ({ className = "" }) => {
       </Modal>
     </section>
   );
-};
-
-HeroSection.propTypes = {
-  className: PropTypes.string,
 };
 
 export default HeroSection;
